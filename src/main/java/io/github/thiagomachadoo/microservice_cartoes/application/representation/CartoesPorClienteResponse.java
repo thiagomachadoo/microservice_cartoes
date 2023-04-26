@@ -17,7 +17,7 @@ public class CartoesPorClienteResponse {
 
     public static CartoesPorClienteResponse fromModel(ClienteCartao model){
         return new CartoesPorClienteResponse( model.getCartao().getNome(),
-                model.getCartao().getBandeiraCartao().toString(),
+                model.getCartao().getBandeira().toString(),
                 model.getLimite());
 
     }

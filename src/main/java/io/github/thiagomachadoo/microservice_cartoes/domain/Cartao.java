@@ -18,15 +18,15 @@ public class Cartao {
     private String nome;
 
     @Enumerated(EnumType.STRING)
-    private BandeiraCartao bandeiraCartao;
+    private Bandeira bandeira;
 
     private BigDecimal renda;
 
     private BigDecimal limiteBasico;
 
-    public Cartao(String nome, BandeiraCartao bandeiraCartao, BigDecimal renda, BigDecimal limiteBasico) {
+    public Cartao(java.lang.String nome, Bandeira bandeira, BigDecimal renda, BigDecimal limiteBasico) {
         this.nome = nome;
-        this.bandeiraCartao = bandeiraCartao;
+        this.bandeira = bandeira;
         this.renda = renda;
         this.limiteBasico = limiteBasico;
     }
